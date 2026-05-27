@@ -1,1 +1,16 @@
- 
+
+# archivos temporales python
+__pycache__/
+*.pyc
+
+# checkpoints de notebooks
+.ipynb_checkpoints/
+
+# archivos de logs
+*.log
+
+# archivos temporales del sistema
+.DS_Store
+
+# archivos grandes opcionales
+*.xlsx
