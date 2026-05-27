@@ -1,18 +1,13 @@
 
-# importar libreria pandas
-import pandas as pd
+from cargar_datos import cargar_dataset
 
-# cargar dataset climático
-df = pd.read_csv('datos/monthly.csv')
+df = cargar_dataset()
 
-# mostrar estadísticas generales
 print("ESTADISTICAS GENERALES")
 print(df.describe())
 
-# buscar mes más caliente
 print("\nMES MAS CALIENTE")
 print(df.loc[df['Mean'].idxmax()])
 
-# buscar mes más frío
 print("\nMES MAS FRIO")
 print(df.loc[df['Mean'].idxmin()])
